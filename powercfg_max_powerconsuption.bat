@@ -49,7 +49,7 @@ REM (Tlačítka napájení a kryt)
 REM  (Akce při zavření krytu) 0=Neprovádět žádnou akci|1=Režim spánku|2=Režim hibernace|3=Vypnout
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 0
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 0
-REM  (Akce při stisknutí tlačítka napájení) 0=Neprovádět žádnou akci|1=Režim spánku|2=Režim hibernace|3=Vypnout|3=Vypnout displej
+REM  (Akce při stisknutí tlačítka napájení) 0=Neprovádět žádnou akci|1=Režim spánku|2=Režim hibernace|3=Vypnout|4=Vypnout displej
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3 
 REM  (Akce při stisknutí tlačítka režimu spánku) 0=Neprovádět žádnou akci|1=Režim spánku|2=Režim hibernace|3=Vypnout|4=Vypnout displej
@@ -64,13 +64,13 @@ powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 501a4d13-42af-442
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 501a4d13-42af-4429-9fd1-a8218c268e20 ee12f906-d277-404b-b6da-e5fa1a576df5 0
 REM
 REM (Řízení spotřeby procesoru)
-REM  (Minimální stav procesoru) 0=Minimum Possible Setting|64=100%=Maximum Possible Setting
+REM  (Minimální stav procesoru) 0=Minimum Possible Setting|100=100%=Maximum Possible Setting
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 54533251-82be-4824-96c1-47b60b740d00 893dee8e-2bef-41e0-89c6-b55d0929964c 100
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 54533251-82be-4824-96c1-47b60b740d00 893dee8e-2bef-41e0-89c6-b55d0929964c 100
 REM  (Zásady chlazení systému) 0=Pasivní|1=Aktivní
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 54533251-82be-4824-96c1-47b60b740d00 94d3a615-a899-4ac5-ae2b-e4d8f634367f 1
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 54533251-82be-4824-96c1-47b60b740d00 94d3a615-a899-4ac5-ae2b-e4d8f634367f 1
-REM  (Maximální stav procesoru) 0=Minimum Possible Setting|64=100%=Maximum Possible Setting
+REM  (Maximální stav procesoru) 0=Minimum Possible Setting|100=100%=Maximum Possible Setting
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 54533251-82be-4824-96c1-47b60b740d00 bc5038f7-23e0-4960-96da-33abaf5935ec 100
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 54533251-82be-4824-96c1-47b60b740d00 bc5038f7-23e0-4960-96da-33abaf5935ec 100
 REM
@@ -78,10 +78,10 @@ REM (Zobrazení)
 REM  (Vypnout obrazovku po) 0=nikdy|60=po jedne minute|...|900=po 15minutach|...
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 7516b95f-f776-4464-8c53-06167f40cc99 3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e 900
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 7516b95f-f776-4464-8c53-06167f40cc99 3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e 900
-REM  (Jas displeje) 0=Minimum Possible Setting|64=100%=Maximum Possible Setting
+REM  (Jas displeje) 0=Minimum Possible Setting|100=100%=Maximum Possible Setting
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 7516b95f-f776-4464-8c53-06167f40cc99 aded5e82-b909-4619-9949-f5d71dac0bcb 100
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 7516b95f-f776-4464-8c53-06167f40cc99 aded5e82-b909-4619-9949-f5d71dac0bcb 100
-REM  (Jas obrazovky při ztmavení) 0=Minimum Possible Setting|32=50%|64=100%=Maximum Possible Setting
+REM  (Jas obrazovky při ztmavení) 0=Minimum Possible Setting|50=50%|100=100%=Maximum Possible Setting
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 7516b95f-f776-4464-8c53-06167f40cc99 f1fbfde2-a960-4165-9f88-50667911ce96 50
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 7516b95f-f776-4464-8c53-06167f40cc99 f1fbfde2-a960-4165-9f88-50667911ce96 50
 REM  (Povolit funkci adaptivního jasu) 0=Vypnuto|1=Zapnuto
@@ -100,10 +100,10 @@ REM (Baterie)
 REM  (Akce při kritickém stavu baterie) 0=Neprovádět žádnou akci|1=Režim spánku|2=Režim hibernace|3=Vypnout
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f 637ea02f-bbcb-4015-8e2c-a1c7b9c0b546 3
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f 637ea02f-bbcb-4015-8e2c-a1c7b9c0b546 3
-REM  (Nízký stav baterie) 0=Minimum Possible Setting|64=100%=Maximum Possible Setting
+REM  (Nízký stav baterie) 0=Minimum Possible Setting|100=100%=Maximum Possible Setting
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f 8183ba9a-e910-48da-8769-14ae6dc1170a 10
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f 8183ba9a-e910-48da-8769-14ae6dc1170a 10
-REM  (Kritický stav baterie) 0=Minimum Possible Setting|64=100%=Maximum Possible Setting
+REM  (Kritický stav baterie) 0=Minimum Possible Setting|100=100%=Maximum Possible Setting
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f 9a66d8d7-4ff7-4ef9-b5a2-5a326ca2a469 5
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f 9a66d8d7-4ff7-4ef9-b5a2-5a326ca2a469 5
 REM  (Oznámení o nízkém stavu baterie) 0=Vypnuto|1=Zapnuto
@@ -112,7 +112,7 @@ powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f1
 REM  (Akce při nízkém stavu baterie) 0=Neprovádět žádnou akci|1=Režim spánku|2=Režim hibernace|3=Vypnout
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f d8742dcb-3e6a-4b3c-b3fe-374623cdcf06 0
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f d8742dcb-3e6a-4b3c-b3fe-374623cdcf06 0
-REM  (Rezervní stav baterie) 0=Minimum Possible Setting|64=100%=Maximum Possible Setting
+REM  (Rezervní stav baterie) 0=Minimum Possible Setting|100=100%=Maximum Possible Setting
 powercfg /setacvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f f3c5027d-cd16-4930-aa6b-90db844a8f00 7
 powercfg /setdcvalueindex 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c e73a048d-bf27-4f12-9731-8b2076e8891f f3c5027d-cd16-4930-aa6b-90db844a8f00 7
 
